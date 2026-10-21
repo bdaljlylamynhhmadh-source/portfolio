@@ -1,56 +1,59 @@
-/* الألوان والتنسيق العام */
+/* تنسيقات عامة للموقع */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f7f6;
     color: #333;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
     line-height: 1.6;
 }
 
-.container {
-    width: 85%;
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* الهيدر */
+/* الترويسة العليا */
 header {
-    background-color: #1e3d59;
-    color: #ffffff;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: #fff;
+    padding: 2.5rem 1rem;
     text-align: center;
-    padding: 40px 0;
-    border-bottom: 4px solid #ff6e40;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2em;
+    margin: 0 0 10px 0;
+    font-size: 2.2rem;
 }
 
 header p {
-    font-size: 1.1em;
+    margin: 0;
+    font-size: 1.1rem;
     opacity: 0.9;
+}
+
+/* الحاوية العامة */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 20px;
 }
 
 /* الأقسام */
 section {
-    background: #ffffff;
-    margin: 20px 0;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    background: #fff;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-h2 {
-    color: #1e3d59;
-    border-bottom: 2px solid #ff6e40;
+section h2 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #4ca1af;
     padding-bottom: 8px;
     margin-top: 0;
 }
 
-/* المهارات */
+/* قائمة المهارات */
 .skills-list {
     list-style: none;
     padding: 0;
@@ -60,34 +63,42 @@ h2 {
 }
 
 .skills-list li {
-    background: #e8ecef;
-    color: #1e3d59;
+    background: #eef2f3;
+    color: #2c3e50;
     padding: 8px 15px;
     border-radius: 20px;
-    font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
-/* البطاقات والمشاريع */
+/* بطاقات المشاريع */
 .project-card {
-    background: #f9fbfb;
-    border-right: 4px solid #1e3d59;
+    background: #fdfdfd;
+    border-right: 4px solid #4ca1af;
     padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 4px;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.02);
 }
 
 .project-card h3 {
-    margin-top: 0;
-    color: #1e3d59;
+    margin: 0 0 8px 0;
+    color: #2c3e50;
+    font-size: 1.1rem;
 }
 
-/* الفوتر */
+.project-card p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* تذييل الصفحة */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #1e3d59;
-    color: #ffffff;
-    font-size: 0.9em;
-    margin-top: 30px;
+    padding: 1.5rem;
+    color: #777;
+    font-size: 0.9rem;
+    background: #eef2f3;
+    margin-top: 3rem;
 }
